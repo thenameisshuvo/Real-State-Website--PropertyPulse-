@@ -1,0 +1,200 @@
+/* From Uiverse.io by ammarsaa */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+  }
+  
+  .navbar-brand {
+    color: #00bfff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-brand i {
+    margin-right: 8px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00bfff;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+  }
+  
+  .message,
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .signin a {
+    color: #00bfff;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+  }
+  
+  .submit:hover {
+    background-color: #00bfff96;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+  /* Additional styles */
+  .container {
+    padding-top: 10px; /* Adjusted for navbar height */
+  }
+  
+  /* Navbar Styles */
+.navbar {
+    background-color: #343a40; /* Dark background for the navbar */
+    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+  }
+  
+  .navbar-brand {
+    color: #00bfff; /* Light blue color for the brand name */
+    font-size: 24px; /* Larger font size for prominence */
+    font-weight: bold; /* Bold font weight for the brand name */
+    display: flex;
+    align-items: center; /* Align items vertically center */
+  }
+  
+  .navbar-brand i {
+    margin-right: 10px; /* Space between icon and brand name */
+    font-size: 24px; /* Match icon size with the brand name */
+  }
+  
+  .navbar-brand:hover {
+    color: #00aaff; /* Slightly darker blue on hover */
+  }
+  
+  @media (max-width: 576px) {
+    .navbar {
+      padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+  
+    .navbar-brand {
+      font-size: 20px; /* Slightly smaller font size on small screens */
+    }
+  
+    .navbar-brand i {
+      font-size: 20px; /* Match icon size with brand name on small screens */
+    }
+  }
+  
