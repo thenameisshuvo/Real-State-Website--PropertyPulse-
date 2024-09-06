@@ -23,7 +23,7 @@ var propertyOverview=[
         by wide verandas. Bungalows are very convenient for the homeowner in that all living areas are
         on a single-story. A bungalow is well suited to persons with impaired mobility, such as the
         elderly or those in wheelchairs. Bungalows provide cost-effective residences.`,
-        propertyImage:'https://img.freepik.com/free-photo/beautiful-swimming-pool-resort_1339-7054.jpg?t=st=1725463544~exp=1725467144~hmac=83cb91abc34ebcd3a4fb0a79a180ab16a253548277895a67b4a7a2d38e4264c9&w=996'
+        propertyImage:'/images/c21205847db766b05678752ba75719b4.jpg'
     },
     {
         propertyName:'4. Flats :',
@@ -52,7 +52,7 @@ var companyOverview=[
        sitting at the comfort of your home without actually traveling all the good and bad properties.
        This saves your time and effort and with a quick shortlist of 4-5 properties you can actually get a house
        in few hours!<br><br>And buyers, get your dream house and get in touch with us to let us know how else we can help !`,
-       companyImage:'https://img.freepik.com/premium-photo/house-with-green-lawn-view-city_1221953-10264.jpg?w=996'
+      
     }
 ]
 

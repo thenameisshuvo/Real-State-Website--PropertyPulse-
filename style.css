@@ -55,10 +55,31 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
+/* Enhanced Buttons */
+.buttonFontSize {
+    font-size: 16px; /* Font size */
+    margin: 0 8px; /* Adjusted margin to balance spacing */
+    padding: 12px 25px; /* Increased padding for better button size */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    border: 2px solid transparent; /* Border for hover effect */
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient background */
+    color: #ffffff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    display: inline-block; /* Align buttons properly */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
 .buttonFontSize:hover {
-    background-color: #007bff; /* Button background color */
-    color: white; /* Text color */
-    border-color: #007bff; /* Border color */
+    background: linear-gradient(145deg, #0056b3, #007bff); /* Inverted gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.buttonFontSize:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
 }
 
 /* Tagline Container */
@@ -136,117 +157,6 @@ body {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    .navbar-title {
-        font-size: 20px;
-    }
-    
-    .houseImage {
-        font-size: 30px; /* Adjusted size */
-    }
-    
-    .buttonFontSize {
-        font-size: 14px;
-        margin: 0 5px; /* Reduced spacing */
-        padding: 10px 15px; /* Adjusted padding */
-    }
-    
-    .taglineContainer, .properties {
-        text-align: center;
-        margin: 10px auto;
-    }
-    
-    .infoContainer, .infoContainer1, .propertyOverviewDiv {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .contactDiv {
-        margin: 20px auto;
-        padding: 15px;
-    }
-}
-
-/* Enhanced Buttons */
-.buttonFontSize {
-    font-size: 16px; /* Font size */
-    margin: 0 8px; /* Adjusted margin to balance spacing */
-    padding: 12px 25px; /* Increased padding for better button size */
-    border-radius: 12px; /* Rounded corners for a modern look */
-    border: 2px solid transparent; /* Border for hover effect */
-    background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient background */
-    color: #ffffff; /* Text color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    display: inline-block; /* Align buttons properly */
-    text-align: center; /* Center text */
-    text-transform: uppercase; /* Uppercase text for emphasis */
-}
-
-.buttonFontSize:hover {
-    background: linear-gradient(145deg, #0056b3, #007bff); /* Inverted gradient on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-}
-
-.buttonFontSize:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
-}
-
-/* Default Navbar Styles */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    transition: background-color 0.3s ease, padding 0.3s ease;
-}
-
-/* Navbar Title */
-.navbar-title {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* Navbar Menu */
-.navbar-menu {
-    display: flex;
-    align-items: center;
-}
-
-/* Button styles in the navbar */
-.navbar-button {
-    margin-left: 10px;
-    font-size: 1rem;
-    padding: 8px 16px;
-    border: none;
-    background-color: #555;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.navbar-button:hover {
-    background-color: #777;
-}
-
-/* Toggle Button Styles */
-.navbar-toggle {
-    display: none; /* Hide toggle button by default */
-    font-size: 1.5rem;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #fff;
-}
-
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .navbar {
         background-color: #444;
@@ -276,8 +186,14 @@ body {
     }
 
     .navbar-button {
-        margin: 5px 0;
+        margin: 5px 0; /* Adjusted margin for better spacing */
         font-size: 0.9rem;
+    }
+
+    .buttonFontSize {
+        font-size: 14px; /* Adjusted font size */
+        margin: 0 5px; /* Reduced margin for better spacing */
+        padding: 10px 15px; /* Adjusted padding */
     }
 }
 
@@ -298,12 +214,18 @@ body {
     }
 
     .navbar-menu.show {
-        display: flex;
+        display: flex; /* Show menu when 'show' class is added */
     }
 
     .navbar-button {
-        margin: 3px 0;
+        margin: 3px 0; /* Adjusted margin for better spacing */
         font-size: 0.8rem;
+    }
+
+    .buttonFontSize {
+        font-size: 14px; /* Adjusted font size */
+        margin: 0 4px; /* Reduced margin for better spacing */
+        padding: 10px 12px; /* Adjusted padding */
     }
 }
 
@@ -324,11 +246,17 @@ body {
     }
 
     .navbar-menu.show {
-        display: flex;
+        display: flex; /* Show menu when 'show' class is added */
     }
 
     .navbar-button {
-        margin: 3px 0;
+        margin: 3px 0; /* Adjusted margin for better spacing */
         font-size: 0.8rem;
+    }
+
+    .buttonFontSize {
+        font-size: 13px; /* Smaller font size for very small screens */
+        margin: 0 2px; /* Minimal margin for very small screens */
+        padding: 8px 10px; /* Adjusted padding for smaller screens */
     }
 }
