@@ -1,334 +1,334 @@
+/* General Styles */
 body {
     margin: 0;
     background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.contactDiv {
-    margin: 10px 0 40px;
+/* Navbar Styles */
+.navBar {
+    min-width: 100%;
+    background-color: #343a40; /* Dark background */
+    padding: 15px 20px; /* Enhanced padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+.houseImage {
+    font-size: 36px; /* Adjusted size */
+    color: white;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.houseImage:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+.navbar-title {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px; /* Adjusted margin */
+    padding-top: 5px;
+    font-size: 24px; /* Enhanced font size */
+    font-weight: 600; /* Bold font weight */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px; /* Increased margin for spacing */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 500; /* Medium font weight */
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+/* Buttons */
+.buttonFontSize {
+    font-size: 16px; /* Adjusted size */
+    margin: 0 10px; /* Increased spacing */
+    padding: 12px 20px; /* Enhanced padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid transparent; /* Border for hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.buttonFontSize:hover {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border-color: #007bff; /* Border color */
+}
+
+/* Tagline Container */
+.taglineContainer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Properties Section */
+.properties {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    color: #007bff; /* Accent color */
+}
+
+/* Info and Property Containers */
+.infoContainer, .propertyOverviewDiv {
+    margin-bottom: 20px;
+}
+
+.infoContainer1, .propertyOverviewDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Image and Content Styles */
 .photoDiv, .photoDiv1 {
-    margin: 10px 80px;
+    margin: 10px;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content stays within rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+.img, .img1 {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
-.navBar
-    {
-        min-width: 650px;
-    }
+.contentDiv, .contentDiv1 {
+    font-size: 16px;
+    color: #333; /* Darker text color for better readability */
+    margin: 10px;
+    line-height: 1.6; /* Improved line height */
+}
 
-.houseImage
-    {
-        position: relative;
-        left: 10px;
-        background: white;
-        width: 50px;
-        height: 50px;
-        font-size:xx-large;
-        padding-left: 7px;
-        padding-top: 8px;
-        color: black;
-    }
+.villa {
+    font-weight: bold;
+    color: #dc3545; /* Accent color */
+}
 
-.houseImage:hover
-        {
-            color: green;
-        }
+/* Contact Section */
+.contactDiv {
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #007bff; /* Accent color */
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
-a:hover   
-    {
-        text-decoration: none;
-        color: white;
-    }
+.contactDetails {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333; /* Darker text color */
+}
 
-    .dreamhouse {
-        color: white;
-        text-decoration: none;
-        padding-left: 0;
-        padding-top: 5px;
+.contactImage {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-title {
+        font-size: 20px;
     }
     
+    .houseImage {
+        font-size: 30px; /* Adjusted size */
+    }
+    
+    .buttonFontSize {
+        font-size: 14px;
+        margin: 0 5px; /* Reduced spacing */
+        padding: 10px 15px; /* Adjusted padding */
+    }
+    
+    .taglineContainer, .properties {
+        text-align: center;
+        margin: 10px auto;
+    }
+    
+    .infoContainer, .infoContainer1, .propertyOverviewDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contactDiv {
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
 
-.logInButton
-    {
-        position: relative;
-        right: 40px;
+/* Enhanced Buttons */
+.buttonFontSize {
+    font-size: 16px; /* Font size */
+    margin: 0 8px; /* Adjusted margin to balance spacing */
+    padding: 12px 25px; /* Increased padding for better button size */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    border: 2px solid transparent; /* Border for hover effect */
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient background */
+    color: #ffffff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    display: inline-block; /* Align buttons properly */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
+.buttonFontSize:hover {
+    background: linear-gradient(145deg, #0056b3, #007bff); /* Inverted gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.buttonFontSize:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+}
+
+/* Default Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Navbar Title */
+.navbar-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Button styles in the navbar */
+.navbar-button {
+    margin-left: 10px;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background-color: #777;
+}
+
+/* Toggle Button Styles */
+.navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .navbar {
+        background-color: #444;
+        padding: 8px 15px;
     }
 
-.signUpButton
-    {
-        position: relative;
-        right: 30px;
+    .navbar-title {
+        font-size: 1.3rem;
     }
 
-.buyButton
-    {
-        position: relative;
-        right: 20px;
+    .navbar-menu {
+        display: none; /* Hide menu by default on smaller screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        background-color: #333;
     }
 
-.contactButton
-    {
-        position: relative;
-        right: 10px;
+    .navbar-menu.show {
+        display: flex; /* Show menu when 'show' class is added */
     }
 
-.buttonFontSize
-    {
-        font-size: large;
-        font-family: Lucida Sans;
+    .navbar-toggle {
+        display: block; /* Show toggle button on smaller screens */
     }
 
-.taglineContainer
-    {
-        position: relative;
-        top: 100px;
-        max-width: fit-content;
+    .navbar-button {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #555;
+        padding: 6px 10px;
+    }
+
+    .navbar-title {
+        font-size: 1.2rem;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
         text-align: center;
     }
 
-.h1
-    {
-        color:midnightblue;
-        font-family:Trebuchet MS;
-        font-weight: bold;
-        padding: 10px;
+    .navbar-menu.show {
+        display: flex;
     }
 
-.h1:hover{
-    text-decoration:none;
+    .navbar-button {
+        margin: 3px 0;
+        font-size: 0.8rem;
+    }
 }
 
-.container1
-    {
-        position: relative;
-        top: 120px;
-        /* border: 1px solid black; */
-        padding-bottom: 1px;
+@media (max-width: 480px) {
+    .navbar {
+        background-color: #666;
+        padding: 4px 5px;
     }
-
-/* company info style start */
-
-.infoContainer
-    {
-        display: flex;
-        /* position: relative;
-        top: 50px; */
-    }
-
-.contentDiv
-    {
-        max-width:800px;
-        font-size: larger;
-        color: black;
-        margin-left:20px;
-        font-weight: 500;
-    }
-
-.photoDiv
-    {
-        max-width: fit-content;
-        /* border: 1px solid black; */
-        margin-left: 80px;
-    }
-
-.photoDiv:hover
-    {
-        border: 3px solid rgb(14, 18, 247);
-        /* border-radius: 10px; */
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-.img
-    {
-        max-width: 500px;
-        margin: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-/* company info style end */
-
-.properties
-    {
-        font-family:Trebuchet MS;
-        font-weight: bold;
-        margin-left:20px;
-        padding-top :40px
-    }
-
-/* property 1 info style start */
-
-.infoContainer1
-    {
-        display: flex;
-        /* position: relative;
-        top: 50px; */
-        /* border: 1px solid black; */
-        padding-top: 40px;
-    }
-
-.contentDiv1
-    {
-        max-width:800px;
-        font-size: larger;
-        color: black;
-        margin-left:20px;
-    }
-
-.villa
-    {
-        margin: 10px;
-        font-family:Trebuchet MS;
-        color:crimson;
-    }
-
-.photoDiv1
-    {
-        max-width: fit-content;
-        margin-left: 80px;
-    }
-
-.photoDiv1:hover
-    {
-        border: 3px solid rgb(73, 16, 171);
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-.img1
-    {
-        max-width: 500px;
-        margin: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-/* property 1 info style end */
-
-.contactDiv
-    {
-        border: 2px solid black;
-        max-width: fit-content;
-        border-radius: 10px;
-    }
-
-.contactDetails
-    {
-        font-family: Trebuchet MS;
-    }
-
-.contactImage
-    {
-        font-size: larger;
-        margin-top:10px;
-    }
-
-
-
-    @media (max-width: 768px) {
-        .navBar {
-            min-width: 100%;
-        }
-    
-        .houseImage {
-            width: 40px;
-            height: 40px;
-            font-size: large;
-        }
-    
-        .buttonFontSize {
-            font-size:automaticallyAdjusted;
-        }
-    
-        .taglineContainer, .properties {
-            text-align: center;
-            margin: 10px auto;
-        }
-    
-        .contentDiv, .contentDiv1 {
-            margin-left: 10px;
-            font-size:automaticallyAdjusted;
-        }
-    
-        .contactDiv {
-            margin: 20px auto;
-            padding: 10px;
-        }
-    }
-    
-    body {
-        font-family: 'Trebuchet MS', sans-serif;
-    }
-    body, h1, h2, p, a, button, .container {
-        font-family: 'Trebuchet MS', sans-serif;
-    }
-        
-    @media (max-width: 768px) {
-        body {
-            font-family: 'Trebuchet MS', sans-serif;
-        }
-    }
-    body {
-        font-family: 'Trebuchet MS', sans-serif !important;
-    }
-    
 
     .navbar-title {
-        margin-left:23px; /* Adjust this value to move left or right */
-        padding-top: 5px; /* Adjust this value to move up or down */
-        color: white; /* Ensure the text color matches the navbar background */
-        font-size: 25px; /* Adjust font size if needed */
-        font-family: 'Trebuchet MS', sans-serif;
-        text-align: center; /* Centers the text horizontally */
+        font-size: 1rem;
     }
-    
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
     }
-    
-    .navbar {
-        animation: fadeIn 1s ease-in-out;
+
+    .navbar-menu.show {
+        display: flex;
     }
-    
-    .btn {
-        transition: background-color 0.3s, transform 0.3s;
+
+    .navbar-button {
+        margin: 3px 0;
+        font-size: 0.8rem;
     }
-    
-    .btn:hover {
-        transform: translateY(-2px); /* Lift button slightly on hover */
-    }
-    
-    .btn, .img, .card {
-        border-radius: 8px;
-    }
-    h1, h2 {
-        letter-spacing: 1px;
-        line-height: 1.4;
-        text-transform: uppercase;
-    }
-    
-    p {
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-    
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
-    
+}

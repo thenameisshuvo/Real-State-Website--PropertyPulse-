@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>PropertyPulse</title>
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="fixed-top navbar navbar-dark bg-dark navBar">
+        <nav class="fixed-top navbar navbar-dark navBar">
             <div style="display: flex;">
                 <a href="./index.html"><i class="fa-sharp fa-solid fa-house houseImage"></i></a>
                 <a href="./index.html" class="dreamhouse navbar-title"><h1>Property Pulse</h1></a>
-
             </div>
             
             <div style="display: flex;">
                 <div class="logInButton">
-                    <a href="./login_page_index.html"><button  type="button" class="btn btn-success buttonFontSize">Log In</button></a>
+                    <a href="./login_page_index.html"><button type="button" class="btn btn-success buttonFontSize">Log In</button></a>
                 </div>
     
                 <div class="signUpButton">
@@ -33,36 +31,49 @@
                     <a href="./property_page_index.html"><button type="button" class="btn btn-primary buttonFontSize">Buy</button></a>
                 </div>
     
-                <div  class="contactButton">
-                    <a href="#contactDiv"><button type="button"  id="contactButton" class="btn btn-danger buttonFontSize">Contact</button></a>
+                <div class="contactButton">
+                    <a href="#contactDiv"><button type="button" id="contactButton" class="btn btn-danger buttonFontSize">Contact</button></a>
                 </div>
-    
             </div>
         </nav>
     </div>
+<!-- Toggle Button -->
+<button class="navbar-toggle" aria-label="Toggle navigation">&#9776;</button>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-title">My Site</div>
+    <button class="navbar-toggle" aria-label="Toggle menu">&#9776;</button>
+    <div class="navbar-menu">
+        <button class="navbar-button">Home</button>
+        <button class="navbar-button">About</button>
+        <button class="navbar-button">Contact</button>
+        <button class="navbar-button">Services</button>
+    </div>
+</div>
 
     <div class="container-fluid taglineContainer">
         <h2 class="h2">Turning your dream home into reality</h2>
     </div>
 
     <div class="container-fluid container1">
-        <!-- company info div start -->
-        <div class="container-fluid infoContainer" id="infoContainer"> </div>
-        <!-- company info div end -->
+        <!-- Company Info Div Start -->
+        <div class="container-fluid infoContainer" id="infoContainer"></div>
+        <!-- Company Info Div End -->
 
         <div class="container-fluid">
-            <h2 class="properties">Properties we provide :</h2>
+            <h2 class="properties">Properties we provide:</h2>
         </div>
 
-        <!-- property overview div start -->
-        <div class="propertyOverviewDiv" id="propertyOverviewDiv"> </div>
-        <!-- property overview div end -->
+        <!-- Property Overview Div Start -->
+        <div class="propertyOverviewDiv" id="propertyOverviewDiv"></div>
+        <!-- Property Overview Div End -->
 
-        <div id="contactDiv" class="container-fluid contactDiv" style="margin-bottom: 40px; margin-top:10px">
-            <div >
+        <div id="contactDiv" class="container-fluid contactDiv">
+            <div>
                 <i class="fa-solid fa-location-dot contactImage"><span class="contactDetails"> House-66, Road-10, Block D, Banani, 1213 Banani Model Town, Dhaka, Bangladesh</span></i> <br>
                 <i class="fa-solid fa-envelope contactImage"><span class="contactDetails"> propertypulse@gmail.com</span></i><br>
-                <i class="fa-brands fa-instagram contactImage" style="font-weight: bold;"><span class="contactDetails"> PropertyPulse</span></i> <br>
+                <i class="fa-brands fa-instagram contactImage"><span class="contactDetails"> PropertyPulse</span></i> <br>
                 <i class="fa-solid fa-phone contactImage"><span class="contactDetails"> +8801755781251</span></i>
             </div>
         </div>

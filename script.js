@@ -79,3 +79,11 @@ propertyOverview.forEach((e)=>{
     </div>`
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.querySelector('.navbar-toggle');
+    var menu = document.querySelector('.navbar-menu');
+    
+    toggleButton.addEventListener('click', function() {
+        menu.classList.toggle('show');
+    });
+});
