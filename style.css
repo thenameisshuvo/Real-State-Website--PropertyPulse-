@@ -47,18 +47,8 @@ body {
 
 /* Buttons */
 .buttonFontSize {
-    font-size: 16px; /* Adjusted size */
-    margin: 0 10px; /* Increased spacing */
-    padding: 12px 20px; /* Enhanced padding */
-    border-radius: 5px; /* Rounded corners */
-    border: 2px solid transparent; /* Border for hover effect */
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-}
-
-/* Enhanced Buttons */
-.buttonFontSize {
     font-size: 16px; /* Font size */
-    margin: 0 8px; /* Adjusted margin to balance spacing */
+    margin: 0 2px; /* Adjusted margin to balance spacing */
     padding: 12px 25px; /* Increased padding for better button size */
     border-radius: 12px; /* Rounded corners for a modern look */
     border: 2px solid transparent; /* Border for hover effect */
@@ -156,7 +146,56 @@ body {
     margin-top: 10px;
 }
 
-/* Responsive Styles */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-button {
+    margin-left: 10px;
+    font-size: 0.5rem;
+    padding: 8px 16px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background-color: #777;
+}
+
+/* Toggle Button Styles */
+.navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .navbar {
         background-color: #444;
@@ -186,14 +225,15 @@ body {
     }
 
     .navbar-button {
-        margin: 5px 0; /* Adjusted margin for better spacing */
+        margin: 5px 0;
         font-size: 0.9rem;
     }
 
+    /* Adjusting buttons for smaller screens */
     .buttonFontSize {
-        font-size: 14px; /* Adjusted font size */
-        margin: 0 5px; /* Reduced margin for better spacing */
-        padding: 10px 15px; /* Adjusted padding */
+        font-size: 14px; /* Smaller font size */
+        margin: 0 4px; /* Reduced margin for closer buttons */
+        padding: 8px 20px; /* Adjusted padding for smaller buttons */
     }
 }
 
@@ -214,18 +254,19 @@ body {
     }
 
     .navbar-menu.show {
-        display: flex; /* Show menu when 'show' class is added */
+        display: flex;
     }
 
     .navbar-button {
-        margin: 3px 0; /* Adjusted margin for better spacing */
+        margin: 1px 0;
         font-size: 0.8rem;
     }
 
+    /* Adjusting buttons for smaller screens */
     .buttonFontSize {
-        font-size: 14px; /* Adjusted font size */
-        margin: 0 4px; /* Reduced margin for better spacing */
-        padding: 10px 12px; /* Adjusted padding */
+        font-size: 12px; /* Smaller font size */
+        margin: 0 3px; /* Reduced margin for closer buttons */
+        padding: 8px 15px; /* Adjusted padding for smaller buttons */
     }
 }
 
@@ -246,17 +287,18 @@ body {
     }
 
     .navbar-menu.show {
-        display: flex; /* Show menu when 'show' class is added */
+        display: flex;
     }
 
     .navbar-button {
-        margin: 3px 0; /* Adjusted margin for better spacing */
+        margin: 3px 0;
         font-size: 0.8rem;
     }
 
+    /* Adjusting buttons for very small screens */
     .buttonFontSize {
-        font-size: 13px; /* Smaller font size for very small screens */
-        margin: 0 2px; /* Minimal margin for very small screens */
-        padding: 8px 10px; /* Adjusted padding for smaller screens */
+        font-size: 11px; /* Smaller font size */
+        margin: 0 1px; /* Minimal margin for very close buttons */
+        padding: 6px 10px; /* Adjusted padding for very small buttons */
     }
 }
