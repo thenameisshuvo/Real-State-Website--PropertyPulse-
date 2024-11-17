@@ -264,7 +264,7 @@ body {
 
     /* Adjusting buttons for smaller screens */
     .buttonFontSize {
-        font-size: 12px; /* Smaller font size */
+        font-size: 9px; /* Smaller font size */
         margin: 0 3px; /* Reduced margin for closer buttons */
         padding: 8px 15px; /* Adjusted padding for smaller buttons */
     }
@@ -292,13 +292,15 @@ body {
 
     .navbar-button {
         margin: 3px 0;
-        font-size: 0.8rem;
+        font-size: 0.3rem;
     }
 
     /* Adjusting buttons for very small screens */
     .buttonFontSize {
-        font-size: 11px; /* Smaller font size */
+        font-size: 8.5px; /* Smaller font size */
         margin: 0 1px; /* Minimal margin for very close buttons */
         padding: 6px 10px; /* Adjusted padding for very small buttons */
     }
 }
+
+
